@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait" >
+
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:text="Welcome to Train selection page"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/spinner_source"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2" />
+
+        <ListView
+            android:id="@+id/listView_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_srcdestdetails"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:smoothScrollbar="true" >
+        </ListView>
+
+        <Button
+            android:id="@+id/button_srcdestdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_destination"
+            android:layout_centerHorizontal="true"
+            android:background="#99FF66"
+            android:text="Fetch"
+            android:textColor="#100000"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_srcdestdetails"
+            android:layout_alignBottom="@+id/button_srcdestdetails"
+            android:layout_alignRight="@+id/textView1"
+            android:text="Count:"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignRight="@+id/textView2"
+            android:text="Te" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/traindest" />
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/imageView1"
+             android:text="Source:"
+             android:textSize="18dp"
+             android:textStyle="bold" />
+
+         <Spinner
+             android:id="@+id/spinner_source"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignTop="@+id/textView1"
+             android:layout_toRightOf="@+id/textView2" />
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_below="@+id/spinner_source"
+             android:text="Destination"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textSize="18dp"
+             android:textStyle="bold" />
+
+    </RelativeLayout>
+    
+    
+</RelativeLayout>
